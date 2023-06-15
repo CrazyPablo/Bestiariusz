@@ -18,6 +18,6 @@ def strzyga(request):
     if request.GET.get('lang'):
         language = request.GET['lang']
     else: language = "en"
-    params=json.load(open(settings.BASE_DIR+'\\polls\\lang\\'+languages[language]))
+    params=json.load(open(settings.BASE_DIR+'/polls/lang/'+languages[language],encoding='UTF-8'))
     return render(request,'strzyga.html',params)
 
