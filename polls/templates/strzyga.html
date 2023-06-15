@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Strzyga - Bestiariusz</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}"/>
+	<meta name="description" content="Chrakterystyka demona słowiańskiego - Strzyga">
+	<meta name="keywords" content="bestiariusz, spis potworów,legendy ludowe,folklore, Strzyga,demon">
+</head>
+<body>
+	<header>
+		<nav class="navbar bg-primary">
+		  <span class="navbar-brand ms-3 h1">{{brand}}</span>
+		</nav>
+	</header>
+	<nav class="navbar navbar-expand-lg sticky-top bg-secondary">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">{{myth1}}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">{{myth2}}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">{{myth3}}</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="{% static 'img/language_ikon.png' %}" width="20" height="20" alt="language ikon">
+							<span>{{lang}}</span>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li><a class="dropdown-item nav-link text-center" href="?lang=en" target="_self">English</a></li>
+							<li><a class="dropdown-item nav-link text-center" href="?lang=pl" target="_self">Polski</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row flex-nowrap">
+			<div class="col-3 col-lg-2 px-2 d-none d-sm-block">
+				<div class="d-flex align-items-sm-start px-1 px-md-3 pt-2 text-white min-vh-100">
+					<ul class="nav flex-column mb-auto align-items-center align-items-sm-start" id="menu">
+						<li class="mt-3">
+							<a href="#Slowianska" data-bs-toggle="collapse" class="side-link px-0 align-middle fw-bold">{{myth1side}}</a>
+							<ul class="collapse show flex-column ms-1 side-nav" id="Slowianska">
+								<li class="w-100"><a href="#" class="px-0 side-link">{{b1_1}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b1_2}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b1_3}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b1_4}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b1_5}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b1_6}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b1_7}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b1_8}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b1_9}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b1_10}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b1_11}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b1_12}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b1_13}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b1_14}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b1_15}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b1_16}}</a></li>
+							</ul>
+						</li>
+						<li class="mt-3">
+							<a href="#Nordycka" data-bs-toggle="collapse" class="side-link px-0 align-middle fw-bold">{{myth2side}}</a>
+							<ul class="collapse show flex-column ms-1 side-nav" id="Nordycka">
+								<li class="w-100"><a href="#" class="px-0 side-link">{{b2_1}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b2_2}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b2_3}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b2_4}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b2_5}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b2_6}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b2_7}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b2_8}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b2_9}}</a></li>
+							</ul>
+						</li>
+						<li class="mt-3">
+							<a href="#Celtycka" data-bs-toggle="collapse" class="side-link px-0 align-middle fw-bold">{{myth3side}}</a>
+							<ul class="collapse show flex-column ms-1 side-nav" id="Celtycka">
+								<li class="w-100"><a href="#" class="px-0 side-link">{{b3_1}}</a></li>
+								<li><a href="#" class="px-0 side-link">{{b3_2}}</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-12 col-sm-9 col-lg-8 p-3 bg-white">
+				<main>
+					<header class="row mb-3">
+						<h2>{{title}}</h2>
+					</header>
+					<div class="row">
+						<div class="col-12 col-xl-4 order-xl-2">
+						<div class="row">
+							<div class="col-12 col-md-6 col-xl-12">
+								<figure class="mb-0">
+									<img src="{% static 'img/strzygamin.png' %}" class="img-fluid border" alt="Responsive image,Strzyga">	
+								</figure>
+							</div>
+							<div class="col-12 col-md-6 col-xl-12 ps-0 ps-md-3 ps-xl-0 pt-3 pt-md-0 pt-xl-3">
+								<div class="row">
+									<div class="col fw-bold">{{st_name}}:</div>
+									<div class="col">{{st_name_a}}</div>
+								</div>
+								<div class="row">
+									<div class="col fw-bold">{{st_myth}}:</div>
+									<div class="col">{{st_myth_a}}</div>
+								</div>
+								<div class="row">
+									<div class="col fw-bold">{{st_type}}:</div>
+									<div class="col">{{st_type_a}}</div>
+								</div>
+								<div class="row">
+									<div class="col fw-bold">{{st_sex}}:</div>
+									<div class="col">{{st_sex_a}}</div>
+								</div>
+								<div class="row">
+									<div class="col fw-bold">{{st_alig}}:</div>
+									<div class="col">{{st_alig_a}}</div>
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="col-12 col-xl-8 order-xl-1 pt-3 pt-xl-0 pe-xl-3">
+							<article>
+								<h4>{{art_1_h}}</h4>
+								<p>{{art_1}}</p>
+							</article>
+						</div>
+					</div>
+					<article class="row">
+						<h4>{{art_2_h}}</h4>
+						<p>{{art_2}}</p>
+					</article>
+					<article class="row">
+						<h4>{{art_3_h}}</h4>
+						<p>{{art_3}}</p>
+					</article>
+					<article class="row">
+						<h4>{{art_4_h}}</h4>
+						<p>{{art_4}}</p>
+					</article>
+					<article class="row">
+						<h4>{{ar_5_h}}</h4>
+						<p>{{art_5}}</p>
+					</article>
+				</main>
+				<aside>
+					<header class="row">
+						<h3>{{aside_h}}</h3>
+					</header>
+					<div class="row mt-3">
+						<article class="col-12 col-md-4">
+							<div class="border mx-3 p-2 h-100 d-flex flex-column">
+								<div>
+									<h4 class="mb-2">{{aside_1_h}}</h4>
+									<p class="mb-2">{{aside_1}}</p>
+								</div>
+								<a class="mt-auto mb-0 text-center btn btn-more" href="#" target="_self">{{more}}</a>
+							</div>
+						</article>
+						<article class="col-12 col-md-4">
+							<div class="border mx-3 p-2 h-100 d-flex flex-column">
+								<div>
+									<h4 class="mb-2">{{aside_2_h}}</h4>
+									<p class="mb-2">{{aside_2}}</p>
+								</div>
+								<a class="mt-auto mb-0 text-center btn btn-more" href="#" target="_self">{{more}}</a>
+							</div>
+						</article>
+						<article class="col-12 col-md-4">
+							<div class="border mx-3 p-2 h-100 d-flex flex-column">
+								<div>
+									<h4 class="mb-2">{{aside_3_h}}</h4>
+									<p class="mb-2">{{aside_3}}</p>
+								</div>
+								<a class="mt-auto mb-0 text-center btn btn-more" href="#" target="_self">{{more}}</a>
+							</div>
+						</article>
+					</div>
+				</aside>
+			</div>
+			<div class="col-2 px-sm-2 d-none d-lg-block"></div>
+		</div>
+	</div>
+	<footer class="row fs-6 border-top border-top-d">
+		<div class="col-0 col-sm-3 col-lg-2"></div>
+		<div class="col-auto">
+			<div class="d-flex justify-content-start">
+				<p class="mb-0">{{source}}:</p>
+				<a class="ps-1 text-dark" href="https://bestiariusz.fandom.com/pl/wiki/Strzyga" target="_blank">Fandom</a>
+				<p class="mb-0">,</p>
+				<a class="ps-1 text-dark" href="https://pl.wikipedia.org/wiki/Strzyga" target="_blank">Wikipedia</a>
+			</div>
+			<div class="d-flex justify-content-start">
+				<p class="mb-0">{{license}}</p>
+			</div>
+		</div>
+	</footer>
+	<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
