@@ -58,7 +58,6 @@
     <Content Include="polls\static\css\bootstrap.css" />
     <Content Include="polls\static\img\favicon.ico" />
     <Content Include="polls\static\img\language_ikon.png" />
-    <Content Include="polls\static\img\strzyga.jpg" />
     <Content Include="polls\static\img\strzygamin.png" />
     <Content Include="polls\static\js\bootstrap.bundle.min.js" />
     <Content Include="polls\templates\strzyga.html" />
